@@ -1,1 +1,60 @@
-m«ëˆ§½©buªàºg§¶)Ý{mšU,j›jÇºà7an{¦Š)ßŠW¨¢ë_ŠW›n·š‘ºÞjG§r‡^v‹­¦ën¦)í¢X§zÊ•éà¶î˜7]yÊy×œ¡×¢ž›­†¥¥Ø¬¦V²¶¬™ë,j¢Šzn¶)éº×â•ç^}«¥µú+²×bžŠ.¶›­¢ëiº×â•ç^}«¥µú+²×hº
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1f5c4a" />
+    <meta name="description" content="Pet Medical Hub: el expediente mÃ©dico digital de tu mascota." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pet Medical Hub</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Pet Medical Hub, inicio">
+          <span class="brand-mark" aria-hidden="true">+</span>
+          <span>Pet Medical <strong>Hub</strong></span>
+        </a>
+        <div class="topbar-actions">
+          <button class="icon-button" id="searchButton" aria-label="Buscar en el expediente" title="Buscar">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          </button>
+          <button class="avatar-button" id="profileButton" aria-label="Acerca de la app">AA</button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+
+      <nav class="bottom-nav" aria-label="NavegaciÃ³n principal">
+        <a href="#inicio" data-route="inicio">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"></path><path d="M5 10v10h14V10M9 20v-6h6v6"></path></svg>
+          <span>Inicio</span>
+        </a>
+        <a href="#expediente" data-route="expediente">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3h10v4H7z"></path><path d="M5 5H3v16h18V5h-2M8 12h8M8 16h5"></path></svg>
+          <span>Expediente</span>
+        </a>
+        <button class="nav-add" id="quickAddButton" aria-label="Registrar consulta">
+          <span>+</span>
+        </button>
+        <a href="#documentos" data-route="documentos">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5M9 13h6M9 17h6"></path></svg>
+          <span>Documentos</span>
+        </a>
+        <a href="#mascotas" data-route="mascotas">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path></svg>
+          <span>Mascotas</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="modal-root" id="modalRoot"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
